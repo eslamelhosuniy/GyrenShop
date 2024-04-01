@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gyren Shop</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon_io/favicon.ico">
+    <!-- Render All Elements Normally -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;900&display=swap" rel="stylesheet">
+    <!-- Bootstrap tool kit-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css.map">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <!-- Main Template CSS File -->
+
+    <link rel="stylesheet" href="css/style.css" />
+
+</head>
+<body>
+         <!-- Start Header -->
+
+         <Header>
+
+            <nav class="navbar ">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="index.html"><img src="images/GYREN-LOGO-3A-Icon.webp" alt="" srcset=""> <span>Gyren Shop</span></a>
+                  <form class="d-none d-md-block  align-items-center px-2" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search">
+                    </form>
+                    
+                    <div class="icons d-flex  align-items-center  ">
+                      <div class="cart text-center ">
+                        <a href="checkout.html">
+                        <i class="fa-solid fa-cart-shopping mx-2 px-2 text-info "></i></a>
+                      </div>
+                        <button style="border: none;" type="button" class="bg-transparent  p-0  pointer-event " data-bs-toggle="modal" data-bs-target="#exampleModal">
+                          <i class="fa-solid fa-user mx-2 px-2 text-info"></i> </button> 
+                          <a class="btn btn-primary mx-2 " data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample"><i class="fa-solid fa-bars"></i>
+                          </a>
+                      </div>
+                </div>
+              </nav>
+  
+        </Header>
+  
+  
+        <div class="navbar d-none d-sm-block  user-select-none  justify-content-center">
+          <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-gamepad me-2"></i>Games</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="games.html"><i class="bi bi-calendar-check-fill me-2"></i>Subscriptions</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa-solid fa-desktop me-2"></i>Software</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa-solid fa-gift me-2"></i>Gift Cards</a>
+            </li>
+         
+          </ul>
+        </div>
+  
+        
+  
+        <!-- End Header -->
+  
+    <!-- Button trigger modal -->
+  
+  
+    <!-- Modal -->
+    <div class="modal fade"  id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div  class="modal-dialog">
+        <div style="background-image: linear-gradient(to right , #051937, #0e172e, #131625, #14151d, #141415); color: #fff;"  class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5 text-uppercase " id="exampleModalLabel">Log in</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body ">
+  
+            <!-- tap nav -->
+            <ul class="nav nav-pills nav-justified mb-3" id="ex1" role="tablist">
+              <li class="nav-item" role="presentation">
+                <a class="nav-link " id="tab-login" data-mdb-toggle="pill" href="#pills-login" role="tab"
+                  aria-controls="pills-login" aria-selected="true">Login</a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a class="nav-link" id="tab-register" data-mdb-toggle="pill" href="#pills-register" role="tab"
+                  aria-controls="pills-register" aria-selected="false">Register</a>
+              </li>
+            </ul>
+  
+  
+            <!-- tap nav -->
+  
+    <!-- Pills content -->
+    <div class="tab-content">
+      <div class="tab-pane fade  login" id="pills-login" role="tabpanel" aria-labelledby="tab-login">
+        <form>
+        
+          <div class="logo d-flex justify-content-center ">
+            <h4 class="text-uppercase my-4 "> sign in</h4>
+          </div>
+  
+          <!-- Email input -->
+          <div class="form-outline mb-4 text-center ">
+            <label class="form-label" for="loginName">Email or username</label>
+            <input type="email" id="loginName" placeholder="..." class="m-auto  form-control" />
+          </div>
+  
+          <!-- Password input -->
+          <div class="form-outline mb-4 text-center">
+            <label class="form-label" for="loginPassword">Password</label>
+            <input type="password" id="loginPassword" placeholder="***" class="m-auto form-control" />
+          </div>
+  
+          <!-- 2 column grid layout -->
+          <div class="row mb-4">
+            <div class="col-md-6 d-flex justify-content-center">
+              <!-- Checkbox -->
+              <div class="form-check mb-3 mb-md-0">
+                <input class="form-check-input" type="checkbox" value="" id="loginCheck" checked />
+                <label class="form-check-label" for="loginCheck"> Remember me </label>
+              </div>
+            </div>
+  
+            <div class="col-md-6 d-flex justify-content-center">
+              <!-- Simple link -->
+              <a href="#!">Forgot password?</a>
+            </div>
+          </div>
+          <div class="text-center mb-3">
+            <p>or Sign in with:</p>
+            <button type="button" class="btn btn-link btn-floating mx-1">
+              <i class="fab fa-facebook-f"></i>
+            </button>
+  
+            <button type="button" class="btn btn-link btn-floating mx-1">
+              <i class="fab fa-google"></i>
+            </button>
+  
+            <button type="button" class="btn btn-link btn-floating mx-1">
+              <i class="fab fa-twitter"></i>
+            </button>
+  
+            <button type="button" class="btn btn-link btn-floating mx-1">
+              <i class="fab fa-github"></i>
+            </button>
+          </div>
+          <!-- Submit button -->
+          <div class="d-flex justify-content-center flex-column ">
+          <button type="submit" class="m-auto  btn btn-primary btn-block mb-4">Sign in</button>
+          <span >Not a Member? <a href="">Register</a></span>
+      </div>
+    </div>
+    
+      <div class="tab-pane fade  signup" id="pills-signup" role="tabpanel" aria-labelledby="tab-signup">
+        <form>
+        
+          <div class="logo d-flex justify-content-center ">
+            <h4 class="text-uppercase my-4 "> sign up</h4>
+          </div>
+    
+          <!-- Name input -->
+          <div class="form-outline mb-4 text-center ">
+            <label class="form-label" for="registerName">Name</label>
+            <input type="text" id="registerName" class="m-auto  form-control" />
+          </div>
+    
+          <!-- Username input -->
+          <div class="form-outline mb-4 text-center ">
+            <label class="form-label" for="registerUsername">Username</label>
+            <input type="text" id="registerUsername" class="m-auto  form-control" />
+          </div>
+    
+          <!-- Email input -->
+          <div class="form-outline mb-4 text-center ">
+            <label class="form-label" for="registerEmail">Email</label>
+            <input type="email" id="registerEmail" class="m-auto form-control" />
+          </div>
+  
+  
+    
+          <!-- Password input -->
+          <div class="form-outline mb-4 text-center ">
+            <label class="form-label" for="registerPassword">Password</label>
+            <input type="password" id="registerPassword" class="m-auto  form-control" />
+          </div>
+    
+          <!-- Repeat Password input -->
+          <div class="form-outline mb-4 text-center ">
+            <label class="form-label" for="registerRepeatPassword">Repeat password</label>
+            <input type="password" id="registerRepeatPassword" class="m-auto  form-control" />
+          </div>
+    
+          <!-- Checkbox -->
+          <div class="form-check d-flex justify-content-center mb-4">
+            <input class="form-check-input me-2" type="checkbox" value="" id="registerCheck" checked
+              aria-describedby="registerCheckHelpText" />
+            <label class="form-check-label" for="registerCheck">
+              I have read and agree to the terms
+            </label>
+          </div>
+    
+          <div class="text-center mb-3">
+            <p class="text-center text-uppercase ">or Sign up with:</p>
+            <button type="button" class="btn btn-link btn-floating mx-1">
+              <i class="fab fa-facebook-f"></i>
+            </button>
+    
+            <button type="button" class="btn btn-link btn-floating mx-1">
+              <i class="fab fa-google"></i>
+            </button>
+    
+            <button type="button" class="btn btn-link btn-floating mx-1">
+              <i class="fab fa-twitter"></i>
+            </button>
+    
+            <button type="button" class="btn btn-link btn-floating mx-1">
+              <i class="fab fa-github"></i>
+            </button>
+          </div>
+  
+  
+          <!-- Submit button -->
+          <div class="d-flex justify-content-center flex-column ">
+            <button type="submit" class="m-auto  btn btn-primary btn-block mb-4">Sign up</button>
+            <span >are you Member? <a href="#pills-login">Log in</a></span>
+        </div>  
+          </form>
+    
+    
+    
+    </div>
+    
+    </div>
+  
+  
+  
+  
+  
+  
+    <!-- Pills content -->
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    
+<div style="background-image: linear-gradient(to left , #051937, #0e172e, #131625, #14151d, #141415); color: #fff;"   class="offcanvas offcanvas-start " tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel">                <a class="navbar-brand" href="#"><img src="images/GYREN-LOGO-3A-Icon.webp" alt="" srcset=""> <span>Gyren</span></a>
+    </h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div " class="offcanvas-body">
+    
+    <form class=" m-auto  align-items-center px-2" role="search">
+      <input class="form-control me-2 w-100 " type="search" placeholder="Search..." aria-label="Search">
+    </form>
+
+    <ul class="list-group my-2 ">
+      
+      <li class="list-group-item ">
+          <h2 class="accordion-header" id="headingOne">
+        <button  class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          <i class="fa-brands fa-steam me-2 "></i> Steam Games  
+            </button>
+      </h2> 
+      <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <ul  class=" list-unstyled ">
+            <li class="my-2 ">
+          1. Shooter<span class="float-end  badge bg-primary rounded-pill ms-3 ">14</span>    
+          </li>
+            <li class=" my-2 ">
+          2. race<span class="float-end  badge bg-primary rounded-pill ms-3 ">14</span>    
+          </li>
+        
+        </ul>
+        </div>
+                  </div>
+    </li>
+      
+      <li class="list-group-item ">
+          <h2 class="accordion-header" id="headingTwo">
+        <button  class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+          <i class="fa-brands fa-playstation me-2"></i>  playstation Games  
+            </button>
+      </h2> 
+      <div id="collapseTwo" class="accordion-collapse collapse " aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <ul  class=" list-unstyled ">
+            <li class="my-2 ">
+          1. Shooter<span class="float-end  badge bg-primary rounded-pill ms-3 ">14</span>    
+          </li>
+            <li class=" my-2 ">
+          2. race<span class="float-end  badge bg-primary rounded-pill ms-3 ">14</span>    
+          </li>
+        
+        </ul>
+        </div>
+                  </div>
+    </li>
+      
+      <li class="list-group-item my-2">
+          <h2 class="accordion-header" id="headingThree">
+        <button  class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+          <i class="fa-brands fa-xbox me-2 "></i> Xbox Games  
+            </button>
+      </h2> 
+      <div id="collapseThree" class="accordion-collapse collapse " aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <ul  class=" list-unstyled ">
+            <li class="my-2 ">
+          1. Shooter<span class="float-end  badge bg-primary rounded-pill ms-3 ">14</span>    
+          </li>
+            <li class=" my-2 ">
+          2. race<span class="float-end  badge bg-primary rounded-pill ms-3 ">14</span>    
+          </li>
+        
+        </ul>
+        </div>
+                  </div>
+    </li>
+      <li class="list-group-item my-2">
+          <h2 class="accordion-header" id="headingFour">
+        <button  class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+          <i class="fa-solid fa-gamepad me-2 "></i> Subscriptions
+  
+            </button>
+      </h2> 
+      <div id="collapseFour" class="accordion-collapse collapse " aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <ul  class=" list-unstyled ">
+            <li class="my-2 ">
+          1. Shooter<span class="float-end  badge bg-primary rounded-pill ms-3 ">14</span>    
+          </li>
+            <li class=" my-2 ">
+          2. race<span class="float-end  badge bg-primary rounded-pill ms-3 ">14</span>    
+          </li>
+        
+        </ul>
+        </div>
+                  </div>
+    </li>
+     
+
+    </ul>
+
+    
+  
+    
+    
+
+    
+  </div>
+</div>
+
+
+
+  <!-- scrripts -->
+  <script src="js/all.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script src="js/index.js"></script>
+
+</body>
+</html>
